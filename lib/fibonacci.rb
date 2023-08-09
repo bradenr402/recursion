@@ -1,4 +1,4 @@
-def fibs(n, result = [0, 1])
+def fibonacci(n, result = [0, 1])
   return [0] if n == 1
   while result.size < n
     result << result[-1] + result[-2]
@@ -7,18 +7,18 @@ def fibs(n, result = [0, 1])
 end
 
 print "Fibonacci using iteration:\n   "
-p fibs(8)
+p fibonacci(8)
 
-def fibs_rec(n, result = [0, 1])
+def fibonacci_rec(n, result = [0, 1])
   if n == 1
     [0]
   elsif n == 2
     [0, 1]
   else
-    result = fibs_rec(n - 1)
+    result = fibonacci_rec(n - 1)
     result << result[-1] + result[-2]
   end
 end
 
 print "\nFibonacci using recursion:\n   "
-p fibs_rec(8)
+p fibonacci_rec(8)
