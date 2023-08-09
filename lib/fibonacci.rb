@@ -6,6 +6,7 @@ def fibs(n, result = [0, 1])
   result
 end
 
+print "Fibonacci using iteration:\n   "
 p fibs(8)
 
 def fibs_rec(n, result = [0, 1])
@@ -19,4 +20,5 @@ def fibs_rec(n, result = [0, 1])
   end
 end
 
+print "\nFibonacci using recursion:\n   "
 p fibs_rec(8)
